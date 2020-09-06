@@ -7,7 +7,7 @@ namespace Lab_Assignment_3
     class Stock
     {
         private string _name;
-        private double _initialValue, _maximumChange, _notificationThreshold;
+        private double _initialValue, _maximumChange, _notificationThreshold, _currentValue;
 
         public Stock(string name, double initialValue, double maximumChange, double notificationThreshold)
         {
@@ -35,6 +35,11 @@ namespace Lab_Assignment_3
         public double NotificationThreshold
         {
             get => _notificationThreshold;
+        }
+
+        public double CurrentValue
+        {
+            get => _currentValue;
         }
     }
 }
