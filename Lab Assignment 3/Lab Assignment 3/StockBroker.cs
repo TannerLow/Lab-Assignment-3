@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab_Assignment_3
+namespace Stock
 {
     class StockBroker
     {
