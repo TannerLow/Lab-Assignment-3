@@ -11,6 +11,8 @@ namespace Stock
             Stock stock3 = new Stock("Banking", 90, 4, 10);
             Stock stock4 = new Stock("Commodity", 500, 20, 50);
 
+            Console.WriteLine("Broker".PadRight(10) + "Stock".PadRight(15) + 
+                "Value".PadRight(10) + "Changes".PadRight(10));
             StockBroker b1 = new StockBroker("Broker 1");
             b1.AddStock(stock1);
             b1.AddStock(stock2);

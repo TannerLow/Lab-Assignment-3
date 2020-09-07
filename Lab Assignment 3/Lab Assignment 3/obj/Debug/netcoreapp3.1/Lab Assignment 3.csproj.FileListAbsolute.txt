@@ -2,3 +2,12 @@ C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignmen
 C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\obj\Debug\netcoreapp3.1\Lab Assignment 3.AssemblyInfoInputs.cache
 C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\obj\Debug\netcoreapp3.1\Lab Assignment 3.AssemblyInfo.cs
 C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\obj\Debug\netcoreapp3.1\Lab Assignment 3.csproj.CoreCompileInputs.cache
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\bin\Debug\netcoreapp3.1\Lab Assignment 3.exe
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\bin\Debug\netcoreapp3.1\Lab Assignment 3.deps.json
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\bin\Debug\netcoreapp3.1\Lab Assignment 3.runtimeconfig.json
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\bin\Debug\netcoreapp3.1\Lab Assignment 3.runtimeconfig.dev.json
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\bin\Debug\netcoreapp3.1\Lab Assignment 3.dll
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\bin\Debug\netcoreapp3.1\Lab Assignment 3.pdb
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\obj\Debug\netcoreapp3.1\Lab Assignment 3.dll
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\obj\Debug\netcoreapp3.1\Lab Assignment 3.pdb
+C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\obj\Debug\netcoreapp3.1\Lab Assignment 3.genruntimeconfig.cache
