@@ -27,8 +27,7 @@ namespace Stock
             InitialValue = startingValue;
             MaxChange = maxChange;
             Threshold = threshold;
-            ThreadStart starter = new ThreadStart(Activate);
-            _thread = new Thread(starter);
+            _thread = new Thread(new ThreadStart(Activate));
             _thread.Start();
         }
         /// <summary>
@@ -40,6 +39,7 @@ namespace Stock
             {
                 Thread.Sleep(500); // 1/2 second
                 ChangeStockValue();
+                StockEvent(this, null);
             }
         }
         /// <summary>
@@ -48,11 +48,11 @@ namespace Stock
         public void ChangeStockValue()
         {
             var rand = new Random();
-            CurrentValue += rand.Next(0, MaxChange);
+            CurrentValue += rand.Next(0, MaxChange+1);
             NumChanges++;
             if ((CurrentValue - InitialValue) > Threshold)
             {
-                StockEvent?.Invoke(this, new StockNotification(StockName, CurrentValue, NumChanges));
+                StockEvent?.Invoke(this, null);
             }
         }
     }

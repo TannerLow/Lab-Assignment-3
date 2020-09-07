@@ -4,7 +4,6 @@ using System.Text;
 using System.IO;
 using System.Threading;
 
-
 namespace Stock
 {
     public class StockBroker
@@ -12,9 +11,7 @@ namespace Stock
         public string BrokerName { get; set; }
         public List<Stock> stocks = new List<Stock>();
         public static ReaderWriterLockSlim myLock = new ReaderWriterLockSlim();
-        readonly string docPath = @"C:\Users\Documents\CECS 475\Lab3_output.txt";
-        public string titles = "Broker".PadRight(10) + "Stock".PadRight(15) +
-       "Value".PadRight(10) + "Changes".PadRight(10) + "Date and Time";
+        readonly string docPath = @"C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\Lab3_output.txt";
         /// <summary>
         /// The stockbroker object
         /// </summary>
@@ -30,7 +27,7 @@ namespace Stock
         public void AddStock(Stock stock)
         {
             stocks.Add(stock);
-            stock.StockEvent += EventHandler; 
+            stock.StockEvent += EventHandler;
         }
         /// <summary>
         /// The eventhandler that raises the event of a change
@@ -41,16 +38,20 @@ namespace Stock
         {
             try
             {
-                Stock newStock = (Stock)sender;
+                Stock newStock = sender as Stock;
                 string statement;
-                string name = newStock.GetStockName.ToString();
-                string value = newStock.GetStockValue.ToString();
-                string numChanges = newStock.getNumChanges.ToString();
-                statement = BrokerName + name + value + numChanges;
+                string name = newStock.StockName;
+                string value = newStock.CurrentValue.ToString();
+                string numChanges = newStock.NumChanges.ToString();
+                statement = BrokerName.PadRight(10) + name.PadRight(15) + value.PadRight(10) + numChanges.PadRight(10);
                 Console.WriteLine(statement);
 
             }
-            catch(Exception E) { Console.WriteLine(E.Message);}
-        }    
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
     }
+
 }
