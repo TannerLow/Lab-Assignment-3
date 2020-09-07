@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
+using System.Threading;
+
 
 namespace Lab_Assignment_3
 {
@@ -45,10 +48,9 @@ namespace Lab_Assignment_3
                 string numChanges = newStock.getNumChanges.ToString();
                 statement = BrokerName + name + value + numChanges;
                 Console.WriteLine(statement);
-                
-            }
- }
-    }
 
-}
+            }
+            catch(Exception E) { Console.WriteLine(E.Message);}
+        }    
+    }
 }
