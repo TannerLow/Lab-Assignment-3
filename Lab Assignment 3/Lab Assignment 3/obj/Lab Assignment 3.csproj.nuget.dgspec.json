@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tanner\\Documents\\Github\\Lab-Assignment-3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj": {}
+    "D:\\Users\\jda_1\\OneDrive\\Desktop\\CECS 475\\repos\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tanner\\Documents\\Github\\Lab-Assignment-3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj": {
+    "D:\\Users\\jda_1\\OneDrive\\Desktop\\CECS 475\\repos\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tanner\\Documents\\Github\\Lab-Assignment-3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj",
+        "projectUniqueName": "D:\\Users\\jda_1\\OneDrive\\Desktop\\CECS 475\\repos\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj",
         "projectName": "Lab Assignment 3",
-        "projectPath": "C:\\Users\\Tanner\\Documents\\Github\\Lab-Assignment-3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj",
-        "packagesPath": "C:\\Users\\Tanner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tanner\\Documents\\Github\\Lab-Assignment-3\\Lab Assignment 3\\Lab Assignment 3\\obj\\",
+        "projectPath": "D:\\Users\\jda_1\\OneDrive\\Desktop\\CECS 475\\repos\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3.csproj",
+        "packagesPath": "C:\\Users\\jda_1\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\jda_1\\OneDrive\\Desktop\\CECS 475\\repos\\Lab Assignment 3\\Lab Assignment 3\\Lab Assignment 3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tanner\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jda_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
