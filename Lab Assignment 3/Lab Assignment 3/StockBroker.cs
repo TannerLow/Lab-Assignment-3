@@ -5,7 +5,7 @@ using System.IO;
 using System.Threading;
 
 
-namespace Lab_Assignment_3
+namespace Stock
 {
     public class StockBroker
     {

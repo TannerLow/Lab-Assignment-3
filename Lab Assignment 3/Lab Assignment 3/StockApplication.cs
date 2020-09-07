@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab_Assignment_3
+namespace Stock
 {
     class StockApplication
     {
