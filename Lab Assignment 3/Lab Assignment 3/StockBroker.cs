@@ -10,8 +10,8 @@ namespace Stock
     {
         public string BrokerName { get; set; }
         public List<Stock> stocks = new List<Stock>();
-        public static ReaderWriterLockSlim myLock = new ReaderWriterLockSlim();
-        readonly string docPath = @"C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\Lab3_output.txt";
+        public static readonly string title = "Broker".PadRight(10) + "Stock".PadRight(15) +
+                "Value".PadRight(10) + "Changes".PadRight(10);
         /// <summary>
         /// The stockbroker object
         /// </summary>
@@ -36,21 +36,13 @@ namespace Stock
         /// <param name="e">Event arguments</param>
         void EventHandler(Object sender, EventArgs e)
         {
-            try
-            {
-                Stock newStock = sender as Stock;
-                string statement;
-                string name = newStock.StockName;
-                string value = newStock.CurrentValue.ToString();
-                string numChanges = newStock.NumChanges.ToString();
-                statement = BrokerName.PadRight(10) + name.PadRight(15) + value.PadRight(10) + numChanges.PadRight(10);
-                Console.WriteLine(statement);
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
+            Stock newStock = sender as Stock;
+            string statement;
+            string name = newStock.StockName;
+            string value = newStock.CurrentValue.ToString();
+            string numChanges = newStock.NumChanges.ToString();
+            statement = BrokerName.PadRight(10) + name.PadRight(15) + value.PadRight(10) + numChanges.PadRight(10);
+            Console.WriteLine(statement);
         }
     }
 
