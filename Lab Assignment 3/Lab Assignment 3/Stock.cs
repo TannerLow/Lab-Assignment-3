@@ -12,7 +12,7 @@ namespace Stock
         // Declare ReaderWriterLockSlim to lock writes to a shared resource from multiple threads.
         // Writes to a text file will include date & time, stock name, stock initial value, and stock price.
         public static ReaderWriterLockSlim myLock = new ReaderWriterLockSlim();
-        public static readonly string docPath = @"C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\Lab3_output.txt";
+        public static readonly string docPath = Environment.CurrentDirectory + @"\Lab3_output.txt";
         public static readonly string title = "Date and Time".PadRight(30) + "Stock".PadRight(15) +
                 "Initial Value".PadRight(15) + "Price";
         private readonly Thread _thread;

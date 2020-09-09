@@ -11,6 +11,7 @@ namespace Stock
             Stock stock3 = new Stock("Banking", 90, 4, 10);
             Stock stock4 = new Stock("Commodity", 500, 20, 50);
 
+            //Write the titles
             Console.WriteLine(StockBroker.title);
             using (System.IO.StreamWriter outputFile = new System.IO.StreamWriter(Stock.docPath, false))
             {
