@@ -7,7 +7,12 @@ namespace Stock
     public class Stock
     {
         public event EventHandler<StockNotification> StockEvent;
+        public static ReaderWriterLockSlim myLock = new ReaderWriterLockSlim();
+        public static readonly string docPath = @"C:\Users\Tanner\Documents\Github\Lab-Assignment-3\Lab Assignment 3\Lab Assignment 3\Lab3_output.txt";
+        public static readonly string title = "Date and Time".PadRight(30) + "Stock".PadRight(15) +
+                "Initial Value".PadRight(15) + "Price";
         private readonly Thread _thread;
+
         public string StockName { get; set; }
         public int InitialValue { get; set; }
         public int CurrentValue { get; set; }
@@ -25,10 +30,12 @@ namespace Stock
         {
             StockName = name;
             InitialValue = startingValue;
+            CurrentValue = startingValue;
             MaxChange = maxChange;
             Threshold = threshold;
             _thread = new Thread(new ThreadStart(Activate));
             _thread.Start();
+            this.StockEvent += FileEventHandler;
         }
         /// <summary>
         /// Activates the threads synchronizations
@@ -54,6 +61,19 @@ namespace Stock
             {
                 StockEvent?.Invoke(this, null);
             }
+        }
+
+        protected void FileEventHandler(object sender, EventArgs e)
+        {
+            myLock.EnterWriteLock();
+            Stock newStock = sender as Stock;
+            DateTime date = DateTime.Now;
+            using (System.IO.StreamWriter outputFile = new System.IO.StreamWriter(docPath, true))
+            {
+                outputFile.WriteLine(date.ToString().PadRight(30) + newStock.StockName.PadRight(15) +
+                            newStock.InitialValue.ToString().PadRight(15) + newStock.CurrentValue.ToString());
+            }
+            myLock.ExitWriteLock();
         }
     }
 }
